@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="#home">Beranda</a>
+    <a href="#profile">Profil</a>
+    <a href="#audio-video">Audio Video</a>
+    <a href="#about">Tentang</a>
+    <a href="#news">Berita</a>
+</nav>
+
+<div id="sections">
+    <header id="home" class="section">
+        <div class="content">
+            <h1>Design Your Website</h1>
+            <p>Dont forget to like, comment, share, and subscribe</p>
+            <a href="#" class="btn">More Information?</a>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </header>
+
+    <section id="profile" class="section">
+        <div class="content">
+            <h2>Profil</h2>
+            <div class="profile-container">
+                <div class="profile-photo">
+                    <img src="IMG_20231204_073513.jpg" alt="Foto Diri">
+                </div>
+                <div class="profile-details">
+                    <p><strong>Nama Lengkap:</strong> Dian Selasi Laras Ena</p>
+                    <p><strong>Nama Panggilan:</strong> Dhian </p>
+                    <p><strong>NIM:</strong> 1632022</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    <p><strong>Golongan Darah:</strong> A</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> karas 03 juni 2003</p>
+                    <p><strong>Alamat:</strong> Sungai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="audio-video" class="section">
+        <div class="content">
+            <h2>Audio Video</h2>
+            <div>
+                <h3>Deskripsi Diri</h3>
+                <video controls width="400">
+                    <source src="video makan makan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="ricky13n_chk-squad-3.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>Tentang</h2>
+            <p>
+                Assallamuallaikum wr.wb.....
+                    perkenalkan nama saya Dian Selasi Laras Ena,biasa di panggil dian,saya lahir di karas tgl 12 juni 2003,
+                    2 hari lagi saya berulangtahun dan umur saya 21 tahun,asal sekolah saya SMA NEGERI KARAS,jurusan IPA,sekarang saya merantau
+                    di fakfak untuk melanjutkan pendidikan saya di politeknik negeri fakfak,jurusan manajemen informatika,
+                    sekarang saya sudah semester2.hoby saya bermain badminton,saya juga suka nonton,selain itu saya juga 
+                    suka bernyanyi walau suara saya tdk bagus,oh iya saya juga suka mendengar musik.cita-cita saya ingin 
+                    menjadi pengusaha semoga allah permudahkan urusan saya hingga tercapai cita-cita saya Aamiin yarobbal
+                    allamin demikian
+                    Wassallamuallaikum wr.wb......</p>
+            </p>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="content">
+            <h2>Berita</h2>
+            <p>Berita Tentang Narkoba di Indonesia</h2>
+                <p>BNN mengungkapkan terjadi peningkatan prevalesni penggunaan narkoba di Indonesia pada 2021 sebesar 0,15 persen sehingga menjadi 1,95 persen atau 3.66 juta jiwa. Yang sebelumnya tahun 2019 3,41 jiwa.
+
+                    Namun, terdapat penurunan angka prevalensi di wilayah pedesaan meskipun terjadi peningkatan pada prevalensi pengguna narkoba di Indonesai secara umum. Penurunan di desa mencapai 0,27 persen turun menjadi 2,30 persen dan tahun ini menjadi 2,03 persen.
+                    
+                    Prevalensi adalah jumlah orang memakai narkoba dalam kurun waktu tertentu dan dikaitkan dengan besar populasi dari kasus itu berasal. Angka prevalensi narkotika dapat diukur dalam dua terminologi waktu yaitu pernah memakai narkotika dan setahu terakhir memakai narkotika.</p>.</p>
+            </div>​.</p>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
